@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="images/preview.png"/>
+
+    <link rel="icon" href="images/winternight.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <title>WinterNight | 3rd Anniversary</title>
+</head>
+<body>
+    
+    <div id="main">
+
+        <iframe src="https://www.youtube.com/embed/xKM-jgaOW2Y?autoplay=1&loop=1" style="display: none; z-index: -99;"></iframe>
+        
+        <div id="videoBackground">
+            <video src="video.mp4" id="video" autoplay loop muted></video>
+        </div>
+
+        <div class="interface">
+            <div class="container">
+                <a href="https://winternightofficial.github.io/OfficialSite/" target="_self" class="logo">
+                    <img src="images/winternight.png" alt="winternight.png">
+                    
+                    <h3>WinterNight</h3>
+                </a>
+
+                <div class="nav">
+                    <a href="#" onclick="home()" id="home">1</a>
+                    <a href="#" id="about">2</a>
+                    <a href="#" id="history">3</a>
+                    <a href="#" id="media">4</a>
+                    <a href="#" id="thanks">5</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Home-->
+        <section class="home">
+            <div class="container">
+                <div class="title">
+                    <h3>首頁</h3>
+                </div>
+                
+                <div class="content">
+                    <img src="images/3rd.png" alt="3rd.png">
+
+                    <p>
+                        夜雪羽創寮三週年紀念
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--About-->
+        <section class="about">
+            <div class="container">
+                <div class="title">
+                    <h3>會長的話</h3>
+                </div>
+                
+                <div class="content">
+                    <h3>會長的話</h3>
+                    <p>
+                        不知不覺夜雪羽也已經成立了三年
+                        <br>
+                        至今大家仍在，實在是得來不易
+                        <br>
+                        儘管寮友各自可能互不認識
+                        <br>
+                        但大家總在群聊時不時閒談、說笑幾句
+                        <br>
+                        看起來距離也不再是那麼地遙遠
+                        <br>
+                        我很高興能夠有幸成立了夜雪羽
+                        <br>
+                        讓我、大家都認識到了不少的新朋友
+                        <br>
+                        來年，也請夜雪羽的寮友們多多指教了
+                        <br>
+                        夜雪羽、三週年快樂！
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--History-->
+        <section class="history">
+            <div class="container">
+                <div class="title">
+                    <h3>寮友名言</h3>
+                </div>
+                
+
+                <div class="content">
+                    <div class="sub-Content">
+                        <div class="card" title="醜醜的係邊">
+                            <h3>漂亮 波比 頭好痛</h3>
+                        </div>
+                        <div class="card" title="芊仔 大佬">
+                            <h3>時光 吹頭髮</h3>
+                        </div>
+                    </div>
+                    <div class="sub-Content">
+                        <div class="card" title="心聖哥">
+                            <h3>你好爛哦</h3>
+                        </div>
+                        <div class="card" title="慶仔">
+                            <h3>你是孔子還是我是孔子</h3>
+                        </div>
+                    </div>
+                    <div class="sub-Content">
+                        <div class="card" title="芊仔">
+                            <h3>兔哥最棒ㄌ</h3>
+                        </div>
+                        <div class="card" title="貓貓羅 心聖哥 44">
+                            <h3>打打</h3>
+                        </div>
+                    </div>
+                    <div class="sub-Content">
+                        <div class="card" title="心聖哥 會長">
+                            <h3>抓抓</h3>
+                        </div>
+                        <div class="card" title="44">
+                            <h3>來畫畫呀</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Media-->
+        <section class="media">
+            <div class="container">
+                <div class="title">
+                    <h3>紀念影片</h3>
+                </div>
+                
+                <div class="content">
+                    <video src="video.mp4" poster="images/videoCover.png" controls></video>
+                </div>
+            </div>
+        </section>
+
+        <!--Thanks-->
+        <section class="thanks">
+            <div class="container">
+                <div class="title">
+                    <h3>尾頁</h3>
+                </div>
+                
+                <div class="content">
+                    <h3>感謝有你!</h3>
+                    <p>
+                        希望大家一切順心如意、身體健康
+                        <br>
+                        期待下一次週年紀念的到來
+                        <br>
+                        <span id="ps">
+                            #經典語錄僅摘錄於部分歷史記錄，只為博君一笑
+                            <br>
+                            #頁面曲目為 Dabin, RUNN 的《Alive》
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            alert("在電腦瀏覽、手機直屏瀏覽體驗更佳")
+
+            $(".home").toggleClass("active", true);
+
+            $(".about").toggleClass("active", false);
+            $(".history").toggleClass("active", false);
+            $(".media").toggleClass("active", false);
+            $(".thanks").toggleClass("active", false);
+        })
+
+        function hide(){
+            $(".home").toggleClass("active", false);
+            $(".about").toggleClass("active", false);
+            $(".history").toggleClass("active", false);
+            $(".media").toggleClass("active", false);
+            $(".thanks").toggleClass("active", false);
+        }
+
+        $("#home").on("click", function(){
+            hide();
+            $(".home").toggleClass("active", true);
+        })
+
+        $("#about").on("click", function(){
+            hide();
+            $(".about").toggleClass("active", true);
+        })
+
+        $("#history").on("click", function(){
+            hide();
+            $(".history").toggleClass("active", true);
+        })
+
+        $("#media").on("click", function(){
+            hide();
+            $(".media").toggleClass("active", true);
+        })
+
+        $("#thanks").on("click", function(){
+            hide();
+            $(".thanks").toggleClass("active", true);
+        })
+
+
+    </script>
+
+</body>
+</html>
