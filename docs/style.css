@@ -45,6 +45,9 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     filter: blur(6px) brightness(.7);
+    background-image: url(images/preview.png);
+    background-size: cover;
+    background-position: center;
 }
 .interface{
     width: 100%;
