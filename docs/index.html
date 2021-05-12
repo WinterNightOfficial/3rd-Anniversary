@@ -17,13 +17,9 @@
     
     <div id="main">
 
-        <video src="BGM.mp4" preload="auto" type="video/mp4" autoplay loop style="display: none; z-index: -99;"></video>
+        <video src="BGM.mp4" preload="auto" type="video/mp4" autoplay loop style="display: none; z-index: -9999;"></video>
         
-        <div id="videoBackground">
-            <video autoplay loop muted playsinline autobuffer controls id="video">
-                <source src="video.mp4" preload="auto" type="video/mp4" poster="images/videoCover.png" >
-            </video>
-        </div>
+        <div id="gifBackground"></div>
 
         <div class="interface">
             <div class="container">
@@ -179,9 +175,6 @@
     <script type="text/javascript">
         $(document).ready(function(){
             alert("在電腦瀏覽、手機直屏瀏覽體驗更佳")
-
-            var video = document.getElementById('video');
-            video.play();
 
             $(".home").toggleClass("active", true);
 
