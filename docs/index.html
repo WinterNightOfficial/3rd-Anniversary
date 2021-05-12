@@ -20,7 +20,9 @@
         <video src="BGM.mp4" preload="auto" type="video/mp4" autoplay loop style="display: none; z-index: -99;"></video>
         
         <div id="videoBackground">
-            <video autoplay loop muted playsinline src="video.mp4" preload="auto" type="video/mp4" poster="images/videoCover.png" id="video"></video>
+            <video autoplay loop muted playsinline autobuffer id="video">
+                <source src="video.mp4" preload="auto" type="video/mp4" poster="images/videoCover.png" >
+            </video>
         </div>
 
         <div class="interface">
